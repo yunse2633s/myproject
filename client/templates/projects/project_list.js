@@ -21,3 +21,5 @@ Template.projectList.helpers({
 	}
 	// 客户端执行Projects.find()获取Projects集合中所有数据，并赋值给projects变量
 });
+//采用订阅projects数据的方式
+// helpers中Projects集合是本地订阅的集合。

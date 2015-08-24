@@ -1,5 +1,12 @@
 <template name="projectItem">
 	<div>
-		<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+		<div>
+			<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+		</div>
+		<a href="{{pathFor 'projectPage'}}"> 讨论1 </a>
+		<a href="{{_id}}"> 讨论2 </a>
+		<!-- url title _id来自project_list.js;针对" _id "在这里路由器会在上下文中（即this对象）中寻找这个_id -->
+		<a href="{{pathFor 'projectPage' someOtherProject}}"> 讨论3 </a>
+		<!-- someOtherProject 是跳转到下一个位置的参数 -->
 	</div>
 </template>
