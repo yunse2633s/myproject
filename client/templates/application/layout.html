@@ -1,0 +1,12 @@
+<template name="layout">
+	<div>
+		<div>
+			<a href="{{pathFor 'projectList'}}">首页2{{projectTitle}}</a>
+			<!-- {{pathFor}}可以返回路由规则的URL路径 -->
+		</div>
+		<div>
+		{{> yield}}
+		<!-- 此处的yield helper 取代了projectList模板 -->
+		</div>
+	</div>
+</template>
